@@ -1,0 +1,46 @@
+# Секреты
+.env
+
+# Данные (не коммитим тяжёлые файлы)
+data/*.pdf
+data/*.xlsx
+data/*.xls
+
+# FAISS-индекс (генерируется локально)
+faiss_index/
+
+# Результаты
+*.xlsx
+!data/test_set.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Окружения
+.venv/
+venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Модели HuggingFace (кэш, не нужен в репо)
+~/.cache/huggingface/
